@@ -13,83 +13,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eth.ga.controllers.HoursCalculatorController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="793.0" stylesheets="@ComboxCss.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eth.ga.controllers.HoursCalculatorController">
    <children>
       <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="465.0" prefWidth="793.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <center>
-            <GridPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="793.0" BorderPane.alignment="CENTER">
-              <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints />
-                  <RowConstraints />
-                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Deliverable" GridPane.columnSpan="8" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Classification" textAlignment="CENTER" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Process" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Sub-Process" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="High-level requirement (Description of the change)" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Complexity" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                  <ComboBox fx:id="classif_cmbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Classification" stylesheets="@comboBox.css" GridPane.rowIndex="4" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="4" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Requirement Assessment with Business" textAlignment="CENTER" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="6" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Funtional Effort at Development Stage" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Funtional Effort at Prototype Stage" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="6" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Funtional Effort at QA  Stage" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="6" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Project Phases Assessment" GridPane.columnSpan="8" GridPane.rowIndex="5">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Risk" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Impact" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Set Up" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Number of versions" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnSpan="2" GridPane.rowIndex="7" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="7" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="7" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Additional Attributes" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="5">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Funtional Assessment" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </Label>
-               </children>
-            </GridPane>
-         </center>
          <bottom>
             <AnchorPane prefHeight="90.0" prefWidth="793.0" style="-fx-border-color: black; -fx-border-width: 3;" BorderPane.alignment="CENTER">
                <children>
@@ -115,13 +41,13 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="0" GridPane.rowIndex="1" />
+                        <Label fx:id="labelBaseHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="0" GridPane.rowIndex="1" />
                         <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="37.0" prefWidth="82.0" style="-fx-border-color: black;" text="Adjusted Hour NEW" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" />
-                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="labelAdjustedHours" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="Quantity" GridPane.columnIndex="2" />
                         <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="Total HOURS" GridPane.columnIndex="3" />
-                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                        <Spinner maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label fx:id="labelTotalHours" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Spinner editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                      </children>
                   </GridPane>
                </children>
@@ -135,6 +61,79 @@
               </menus>
             </MenuBar>
          </top>
+         <left>
+            <GridPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="793.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="47.0" minHeight="9.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ComboBox fx:id="CBClassification" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#setClassification" prefHeight="37.0" prefWidth="158.0" promptText="..." GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="CBProcess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#getComboBoxValue" prefWidth="150.0" promptText="..." GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                  <ComboBox id="CBSubProcess" fx:id="CBSubProcess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#getComboBoxValue" prefWidth="150.0" promptText="..." GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                  <ComboBox id="CBComplex" fx:id="CBComplex" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#setComplexity" prefWidth="150.0" promptText="..." GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                  <TextArea id="CBDescription" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="4" GridPane.rowIndex="3" GridPane.rowSpan="3" />
+                  <Label fx:id="labelRequirement" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Requirement Assessment" textAlignment="CENTER" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                  <Label fx:id="labelTechTestStage" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Technical Effort at Testing Stage" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="7" />
+                  <Label fx:id="labelTechGoLive" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Technical Effort at Go Live Stage" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.columnSpan="3" GridPane.rowIndex="7" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Project Phases Assessment" GridPane.columnSpan="8" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelPerformance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Performance" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                  <Label fx:id="labelTBC" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="TBC" textAlignment="CENTER" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                  <Label fx:id="labelSetUp" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Set Up Lower Env" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                  <Label fx:id="labelNumberofVers" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Number of versions" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                  <ComboBox fx:id="CBRequirement" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                  <ComboBox id="CBFunctionalEffortPS" fx:id="CBFunctionalEffortLS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnIndex="5" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+                  <ComboBox id="CBFunctionalEffortDV" fx:id="CBFunctionalEffortTest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+                  <ComboBox id="CBSetUpLowerEnv" fx:id="CBSetUpLowerEnv" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                  <ComboBox id="CBNumberofVersion" fx:id="CBNumberofVersion" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                  <ComboBox id="CBImpact" fx:id="CBTBC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnIndex="9" GridPane.rowIndex="3" GridPane.rowSpan="3" />
+                  <ComboBox id="CBRisk" fx:id="CBPerformance" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CalculateAdjustedHours" prefWidth="150.0" promptText="..." GridPane.columnIndex="8" GridPane.rowIndex="3" GridPane.rowSpan="3" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text="Additional Attributes" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: #90C688;" text=" Technical Risk Assessment" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Process" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Complexity" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Classification" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Sub-Process" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="High-level requirement (Description of the change)" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #88AFC6; -fx-border-color: black;" text="Deliverable" GridPane.columnSpan="8" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </left>
       </BorderPane>
    </children>
 </AnchorPane>

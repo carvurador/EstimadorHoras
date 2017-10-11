@@ -3,18 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.eth.ga.calculations;
-
-import javafx.scene.control.TextField;
-
+package com.eth.ga.model;
 
 /**
  *
  * @author sapollonio
  */
-public class Operations {
+public interface ICalculable {
     
-    public static void setValueView(TextField field, Object obj){
-        field.setText(String.valueOf(obj));
-    }
+    public abstract double calculateStimateHours();
 }
