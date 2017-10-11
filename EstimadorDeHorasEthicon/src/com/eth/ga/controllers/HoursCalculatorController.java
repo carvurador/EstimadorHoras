@@ -314,9 +314,9 @@ public class HoursCalculatorController implements Initializable {
     private void CalculateAdjustedHours(ActionEvent event) {
                 
         box = (ComboBox<Object>) event.getSource();
-        String lol = (String)box.getValue();
+        String cbValue = (String)box.getValue();
         
-        double result = Initializer.getAssesmentImpacts(box.getId(), lol);
+        double result = Initializer.getAssesmentImpacts(box.getId(), cbValue);
         double a = Double.valueOf(labelBaseHour.getText());
         double b = Double.valueOf(labelAdjustedHours.getText());
         String boxId = box.getId();
@@ -324,13 +324,13 @@ public class HoursCalculatorController implements Initializable {
             
         setTestValues.add(new ProjectTest(box.getId(),(String) box.getValue()));        
         switch(boxId){
-            case "CBRisk": CBRiskValue=Initializer.getAssesmentImpacts(box.getId(), lol); break;
-            case "CBImpact":CBImpactValue=Initializer.getAssesmentImpacts(box.getId(), lol);break;
-            case "CBRequirement":CBRequirementValue=Initializer.getAssesmentImpacts(box.getId(), lol);break;
-            case "CBFunctionalEffortDV":CBFunctionalEffortDVValue=Initializer.getAssesmentImpacts(box.getId(), lol);break;
-            case "CBFunctionalEffortPS":CBFunctionalEffortPSValue=Initializer.getAssesmentImpacts(box.getId(), lol);break;
-            case "CBSetUpLowerEnv":CBSetUpLowerEnvValue=Initializer.getAssesmentImpacts(box.getId(), lol);break;
-            case "CBNumberofVersion":CBNumberofVersionValue=Initializer.getAssesmentImpacts(box.getId(), lol);break;
+            case "CBRisk": CBRiskValue=Initializer.getAssesmentImpacts(box.getId(), cbValue); break;
+            case "CBImpact":CBImpactValue=Initializer.getAssesmentImpacts(box.getId(), cbValue);break;
+            case "CBRequirement":CBRequirementValue=Initializer.getAssesmentImpacts(box.getId(), cbValue);break;
+            case "CBFunctionalEffortDV":CBFunctionalEffortDVValue=Initializer.getAssesmentImpacts(box.getId(), cbValue);break;
+            case "CBFunctionalEffortPS":CBFunctionalEffortPSValue=Initializer.getAssesmentImpacts(box.getId(), cbValue);break;
+            case "CBSetUpLowerEnv":CBSetUpLowerEnvValue=Initializer.getAssesmentImpacts(box.getId(), cbValue);break;
+            case "CBNumberofVersion":CBNumberofVersionValue=Initializer.getAssesmentImpacts(box.getId(), cbValue);break;
         }
         
         //Calculate result
